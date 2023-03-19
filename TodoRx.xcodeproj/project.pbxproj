@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40EBCCE5813A6582345AF70F /* Pods_TodoRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E55699397558445F1CFB28E /* Pods_TodoRx.framework */; };
+		608B28B429C6FB2C000FA537 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608B28B329C6FB2C000FA537 /* TodoCell.swift */; };
+		608B28B629C7071C000FA537 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608B28B529C7071C000FA537 /* Todo.swift */; };
 		60FC21EB29C6E9A600504659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC21EA29C6E9A600504659 /* AppDelegate.swift */; };
 		60FC21ED29C6E9A600504659 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC21EC29C6E9A600504659 /* SceneDelegate.swift */; };
 		60FC21EF29C6E9A600504659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC21EE29C6E9A600504659 /* ViewController.swift */; };
-		60FC21F229C6E9A600504659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FC21F029C6E9A600504659 /* Main.storyboard */; };
 		60FC21F429C6E9A700504659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60FC21F329C6E9A700504659 /* Assets.xcassets */; };
 		60FC21F729C6E9A700504659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FC21F529C6E9A700504659 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		608B28B329C6FB2C000FA537 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		608B28B529C7071C000FA537 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		60FC21E729C6E9A600504659 /* TodoRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FC21EA29C6E9A600504659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60FC21EC29C6E9A600504659 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		60FC21EE29C6E9A600504659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		60FC21F129C6E9A600504659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60FC21F329C6E9A700504659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60FC21F629C6E9A700504659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60FC21F829C6E9A700504659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68F3A2DAAE41475F4E94D276 /* Pods-TodoRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoRx.debug.xcconfig"; path = "Target Support Files/Pods-TodoRx/Pods-TodoRx.debug.xcconfig"; sourceTree = "<group>"; };
+		7E55699397558445F1CFB28E /* Pods_TodoRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		831DA602A4378740268EB5BF /* Pods-TodoRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoRx.release.xcconfig"; path = "Target Support Files/Pods-TodoRx/Pods-TodoRx.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EBCCE5813A6582345AF70F /* Pods_TodoRx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13AEB07AFBE1E1D703A41956 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68F3A2DAAE41475F4E94D276 /* Pods-TodoRx.debug.xcconfig */,
+				831DA602A4378740268EB5BF /* Pods-TodoRx.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		608B28B729C70745000FA537 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				608B28B529C7071C000FA537 /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		608B28B829C70751000FA537 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		608B28B929C70759000FA537 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				608B28B329C6FB2C000FA537 /* TodoCell.swift */,
+				60FC21EE29C6E9A600504659 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		608B28BA29C70770000FA537 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				60FC21EA29C6E9A600504659 /* AppDelegate.swift */,
+				60FC21EC29C6E9A600504659 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		60FC21DE29C6E9A600504659 = {
 			isa = PBXGroup;
 			children = (
 				60FC21E929C6E9A600504659 /* TodoRx */,
 				60FC21E829C6E9A600504659 /* Products */,
+				13AEB07AFBE1E1D703A41956 /* Pods */,
+				F0BF74AA57546DCE6B504A92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +107,23 @@
 		60FC21E929C6E9A600504659 /* TodoRx */ = {
 			isa = PBXGroup;
 			children = (
-				60FC21EA29C6E9A600504659 /* AppDelegate.swift */,
-				60FC21EC29C6E9A600504659 /* SceneDelegate.swift */,
-				60FC21EE29C6E9A600504659 /* ViewController.swift */,
-				60FC21F029C6E9A600504659 /* Main.storyboard */,
+				608B28BA29C70770000FA537 /* App */,
+				608B28B729C70745000FA537 /* Model */,
+				608B28B929C70759000FA537 /* View */,
+				608B28B829C70751000FA537 /* ViewModel */,
 				60FC21F329C6E9A700504659 /* Assets.xcassets */,
 				60FC21F529C6E9A700504659 /* LaunchScreen.storyboard */,
 				60FC21F829C6E9A700504659 /* Info.plist */,
 			);
 			path = TodoRx;
+			sourceTree = "<group>";
+		};
+		F0BF74AA57546DCE6B504A92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E55699397558445F1CFB28E /* Pods_TodoRx.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60FC21FB29C6E9A700504659 /* Build configuration list for PBXNativeTarget "TodoRx" */;
 			buildPhases = (
+				BD2709F786F02EAC30E9BC0A /* [CP] Check Pods Manifest.lock */,
 				60FC21E329C6E9A600504659 /* Sources */,
 				60FC21E429C6E9A600504659 /* Frameworks */,
 				60FC21E529C6E9A600504659 /* Resources */,
+				2A98EAD05FB4779F0FC48B5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +188,52 @@
 			files = (
 				60FC21F729C6E9A700504659 /* LaunchScreen.storyboard in Resources */,
 				60FC21F429C6E9A700504659 /* Assets.xcassets in Resources */,
-				60FC21F229C6E9A600504659 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A98EAD05FB4779F0FC48B5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodoRx/Pods-TodoRx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TodoRx/Pods-TodoRx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TodoRx/Pods-TodoRx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD2709F786F02EAC30E9BC0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TodoRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60FC21E329C6E9A600504659 /* Sources */ = {
@@ -141,20 +243,14 @@
 				60FC21EF29C6E9A600504659 /* ViewController.swift in Sources */,
 				60FC21EB29C6E9A600504659 /* AppDelegate.swift in Sources */,
 				60FC21ED29C6E9A600504659 /* SceneDelegate.swift in Sources */,
+				608B28B429C6FB2C000FA537 /* TodoCell.swift in Sources */,
+				608B28B629C7071C000FA537 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		60FC21F029C6E9A600504659 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60FC21F129C6E9A600504659 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		60FC21F529C6E9A700504659 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +378,7 @@
 		};
 		60FC21FC29C6E9A700504659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F3A2DAAE41475F4E94D276 /* Pods-TodoRx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +389,9 @@
 				INFOPLIST_FILE = TodoRx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +399,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericyong.TodoRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		60FC21FD29C6E9A700504659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 831DA602A4378740268EB5BF /* Pods-TodoRx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +421,9 @@
 				INFOPLIST_FILE = TodoRx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +431,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericyong.TodoRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
